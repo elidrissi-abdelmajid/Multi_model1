@@ -1,0 +1,7 @@
+node_modules/
+myenv/
+.data/
+myenv/
+sentiment_analysis/local_model/pytorch_model.bin
+*.dll
+*.lib
