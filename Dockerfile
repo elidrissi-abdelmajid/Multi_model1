@@ -4,15 +4,6 @@ FROM python:3.9-slim
 # Set the working directory in the container
 WORKDIR /app
 
-# Install necessary system dependencies
-RUN apk update && apk add --no-cache \
-    build-base \
-    gfortran \
-    openblas-dev \
-    lapack-dev \
-    linux-headers \
-    cython
-
 # Copy requirements.txt first to leverage Docker cache if dependencies don’t change
 COPY requirements.txt .
 
